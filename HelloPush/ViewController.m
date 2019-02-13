@@ -35,8 +35,9 @@ static BMSPushBinder* bmsPushBinder = nil;
     
     NSString * appGuid = @"";
     NSString * clientSecret = @"";
+    NSString * bluemixRegion = [BMSPushBinder regionUsSouth];
     
-    [bmsPushBinder initializeWithAppGUIDWithAppGuid:appGuid clientSecret:clientSecret bluemixRegion: [BMSPushBinder regionUsSouth] options:notificationOptions];
+    [bmsPushBinder initializeWithAppGUIDWithAppGuid:appGuid clientSecret:clientSecret bluemixRegion: bluemixRegion options:notificationOptions];
     
 }
 
